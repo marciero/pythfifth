@@ -1,8 +1,3 @@
----
-title: "Pythagorean Fifths on the Unit Circle"
-format: html
----
-
 Any point, $(x,y)$, on the unit circle can be expressed as
 
 $$ (x,y)=(\cos \theta, \sin \theta). $$

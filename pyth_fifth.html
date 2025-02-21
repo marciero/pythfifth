@@ -100,13 +100,13 @@ window.Quarto = {
 <li>We would like the angle for stacked intervals to be obtained by adding the corresponding angles.</li>
 </ul>
 <p>So we define, for an interval with frequency ratio <span class="math inline">\(r\)</span>,</p>
-<p><span class="math display">\[ \theta(r)=2\pi \log_2 r. \]</span></p>
-<p>It is readily seen that this function has the desired properties. For example, since an octave has ratio 2, we see that <span class="math inline">\(\theta(2)=2\pi\)</span>. To see that the equation satisfies the second property, suppose that <span class="math inline">\(\theta(r_1)=\theta_1\)</span> and <span class="math inline">\(\theta(r_2)=\theta_2\)</span>. Recall that the ratio for the stacked interval with ratios <span class="math inline">\(r_1\)</span> and <span class="math inline">\(r_2\)</span> is the product <span class="math inline">\(r_1r_2\)</span>, and by properties of logarithms we have</p>
-<p><span class="math display">\[ \theta(r_1r_2) = 2\pi \log_2(r_1r_2) = 2\pi \log_2 r_1 + 2\pi \log_2 r_2 = \theta(r_1) + \theta(r_2). \]</span></p>
+<p><span class="math display">\[ f(r)=2\pi \log_2 r. \]</span></p>
+<p>It is readily seen that the function <span class="math inline">\(f\)</span> has the desired properties. For example, since an octave has ratio 2, we see that <span class="math inline">\(f(2)=2\pi\)</span>. To see that the equation satisfies the second property, suppose that <span class="math inline">\(f(r_1)=\theta_1\)</span> and <span class="math inline">\(f(r_2)=\theta_2\)</span>. Recall that the ratio for the stacked interval with ratios <span class="math inline">\(r_1\)</span> and <span class="math inline">\(r_2\)</span> is the product <span class="math inline">\(r_1r_2\)</span>, and by properties of logarithms we have</p>
+<p><span class="math display">\[ f(r_1r_2) = 2\pi \log_2(r_1r_2) = 2\pi \log_2 r_1 + 2\pi \log_2 r_2 = f(r_1) + f(r_2). \]</span></p>
 <p>So we simply add the angles.</p>
-<p>It follows from this that the points on the unit circle for the twelve tones of the even-tempered scale are all equally spaced on the unit circle, and by the property of stacked intervals, the ratio for one half-step must satisfy <span class="math inline">\(r^{12}=2\)</span>, which gives <span class="math inline">\(r=2^{1/12}\approx 1.059463094\)</span>. We find</p>
-<p><span class="math display">\[ \theta(2^{1/12}) = \frac{2\pi}{12} = \frac{\pi}{6}. \]</span></p>
-<p>Also, notes outside the octave simply wrap around the circle.</p>
+<p>Using the property of stacked intervals, the ratio for one half-step must satisfy <span class="math inline">\(r^{12}=2\)</span>, which gives <span class="math inline">\(r=2^{1/12}\approx 1.059463094\)</span>. We find</p>
+<p><span class="math display">\[ f(2^{1/12}) = \frac{2\pi}{12} = \frac{\pi}{6} \]</span></p>
+<p>So that the points on the unit circle for the twelve tones of the even-tempered scale are all equally spaced at intervals of <span class="math inline">\(\pi/6 = 30\)</span> degrees. Also, notes outside the octave simply wrap around the circle.</p>
 <p>The following figures show the twelve even-tempered scale notes, and the scale generated from the Pythagorean fifth, for which <span class="math inline">\(r=\frac{3}{2}\)</span>.</p>
 <section id="twelve-even-tempered-and-pythagorean-tones" class="level4">
 <h4 class="anchored" data-anchor-id="twelve-even-tempered-and-pythagorean-tones">Twelve Even-Tempered and Pythagorean Tones</h4>
@@ -142,9 +142,9 @@ window.Quarto = {
 </section>
 <section id="infinite-tones" class="level4">
 <h4 class="anchored" data-anchor-id="infinite-tones">Infinite tones</h4>
-<p>An interesting problem is to describe the situation as the number of tones increases. With <span class="math inline">\(n\)</span> tones, if we give each point, <span class="math inline">\(p_i\)</span>, on the circle a weight of <span class="math inline">\(1/n\)</span>, the total weight is then 1 for any <span class="math inline">\(n\)</span>. Then you have a <em>probability measure</em> on the circle. Using Weyl’s Equidistribution Theorem one can show that as</p>
+<p>An interesting problem is to describe the situation as the number of tones increases. With <span class="math inline">\(n\)</span> tones, if we give each point, <span class="math inline">\(p_i\)</span>, on the circle a weight of <span class="math inline">\(1/n\)</span>, the total weight is then 1 for any <span class="math inline">\(n\)</span>. Then you have a <em>probability measure</em> on the circle consisting of point masses. Using Weyl’s Equidistribution Theorem one can show that as</p>
 <p><span class="math inline">\(n \rightarrow \infty\)</span> these probability measures converge to a continuous probability density function on the circle (or the interval <span class="math inline">\((0, 2\pi]\)</span>, take your pick). There are many ways to define convergence of functions, sequences, measures, etc. In this particular case the convergence is in the so called <em>weak-star</em> topology on the space of measures. Despite the esoteric sounding name, this convergence is very intuitive. We can define it this way:</p>
-<p>Let <span class="math inline">\(\theta_i, i = 1, 2, 3, ..., n\)</span> be the angles of the points on the circle resulting from stacking pythagorean fifths. For any continuous function <span class="math inline">\(f\)</span>, we have <span class="math display">\[
+<p>Let <span class="math inline">\(\theta_i, i = 1, 2, 3, ..., n\)</span> be the angles of the points on the circle resulting from stacking pythagorean fifths. The associated point mass measures converge to the uniform distribution if, for any continuous function <span class="math inline">\(f\)</span>, we have <span class="math display">\[
 \lim_{n \rightarrow \infty} \frac{1}{n} \sum_{i = 1}^n f(\theta_i) = \frac{1}{2\pi}\int_0^{2\pi} \ f(\theta) \ d\theta
 \]</span></p>
 </section>
