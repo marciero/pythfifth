@@ -4,9 +4,11 @@ Any point, $(x,y)$, on the unit circle can be expressed as
 
 $$ (x,y)=(\cos \theta, \sin \theta). $$
 
-That is, the $x$ and $y-$coordinates are $\cos \theta$ and $\sin \theta$, respectively, where $\theta$ is the angle that a ray from the origin to the point makes with the $x-$axis, measured positive counterclockwise. You may remember this from high school algebra/trig. Equivalently, any point on the unit circle in the complex plane can be written $e^{i \theta}$. For example, the point $(0,1)$ corresponds to $\theta=0$, and $(1,0)$ corresponds to $\theta=\frac{\pi}{2}$.
+That is, the $x$ and $y$ coordinates are $\cos \theta$ and $\sin \theta$, respectively, where $\theta$ is the angle that a ray from the origin to the point makes with the $x-$axis, measured positive counterclockwise. You may remember this from high school algebra/trig. Equivalently, any point on the unit circle in the complex plane can be written $e^{i \theta}$. For example, the point $(1,0)$ corresponds to $\theta=0$, and $(0,1)$ corresponds to $\theta=\frac{\pi}{2}$.
 
-We can identify musical intervals with points on the unit circle by defining $\theta$ for a given interval. We would like our definition to have the following properties:
+For our purposes you can think of starting at the top of the circle (0,1) and measuring angle positive clockwise, as this is the circle of fifths convention that people are familiar with. We use this convention for the plots below but it makes no difference as far as the math goes. 
+ 
+We can identify musical intervals with points on the circle by defining $\theta$ for a given interval. We would like our definition to have the following properties:
 
 -   We would like an octave to correspond to $\theta=2\pi$, a full rotation around the circle.
 -   We would like the angle for stacked intervals to be obtained by adding the corresponding angles.
