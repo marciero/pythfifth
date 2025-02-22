@@ -68,7 +68,7 @@ An interesting problem is to describe the situation as the number of tones incre
 
 $n \rightarrow \infty$ these probability measures converge to a continuous probability density function on the circle (or the interval $(0, 2\pi]$, take your pick). There are many ways to define convergence of functions, sequences, measures, etc. In this particular case the convergence is in the so called *weak-star* topology on the space of measures. Despite the esoteric sounding name, this convergence is very intuitive. We can define it this way:
 
-Let $\theta_i, i = 1, 2, 3, ..., n$ be the angles of the points on the circle resulting from stacking pythagorean fifths. The associated point mass measures converge to the uniform distribution if, for any continuous function $f$, we have 
+Let $\theta_i, i = 1, 2, 3, ..., n$ be the angles of the points on the circle resulting from stacking pythagorean fifths. The associated point mass measures converge to the uniform distribution in the weak star topology if, for any continuous function $f$, we have 
 
 $$
 \lim_{n \rightarrow \infty} \frac{1}{n} \sum_{i = 1}^n f(\theta_i) = \frac{1}{2\pi}\int_0^{2\pi} \ f(\theta) \ d\theta
